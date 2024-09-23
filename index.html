@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+</head>
+
+<body>
+
+    <header>
+        <div class="navbar">
+            <div class="left">
+                <div class="logo">
+                    Dinesh's Portfolio
+                </div>
+            </div>
+            <div class="right">
+                <a href="#skills">Skills</a>
+                <a href="#Education">Education</a>
+                <a href="#About">About</a>
+
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="content">
+            <div class="left-sec">
+
+
+
+                <p id="intro-text">Hi, My name is <span class="myname">Dinesh</span><br> and, <span id="element"></span>
+                </p> <br>
+                <button class="btn linkedln">Linkedln</button><a href="dinesh_Resume.docx" download="dinesh_Resume.docx"> <button class="btn  resume">Download Resume</button></a>
+               
+
+            </div>
+
+
+            <div class="right-sec"> <img class="img" src="web.png" alt="">
+            </div>
+
+
+    </main>
+    <hr>
+    <div class="skill-box box-sections">
+        <!-- Skills Section -->
+        <section id="skills">
+            <h2>My Skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Bootstrap</li>
+                <li>Video Editing</li>
+                <li>Python</li>
+            </ul>
+        </section>
+    </div>
+    <hr>
+    <div class="edu-box box-sections">
+        <!-- education Section -->
+        <section id="Education">
+            <h2>Education</h2>
+            <div class="school">
+                <h5>School</h5>
+                <p>I study in school based in my village, During my school years, I consistently performed well
+                    academically, securing top positions in 8th, 10th, and 12th grades. I scored 91% in my 12th
+                    standard.
+                </p>
+            </div>
+            <div class="clg">
+                <h5>College</h5>
+                <p>I am currently pursuing a Bachelor of Computer Applications (BCA) from Pacific University and am in
+                    my 3rd semester. I am passionate about web development and learning full-stack development. I have a
+                    solid foundation in HTML, CSS, and JavaScript, and I'm also proficient in C and Python.
+                    Additionally, I am learning Data Structures and Algorithms (DSA) in C++.
+                </p>
+            </div>
+        </section>
+    </div>
+    <hr>
+
+    <!-- about Section -->
+    <div class="about-box ">
+        <section id="About">
+            <h2>About me</h2>
+            <div class="About">
+
+                <p>Hi! I’m Dinesh, a passionate Frontend Web Developer and Video Editor currently pursuing my Bachelor
+                    of
+                    Computer Applications (BCA) from Pacific University in Udaipur. With a strong foundation in HTML,
+                    CSS,
+                    and JavaScript, I am dedicated to creating engaging and user-friendly web experiences. My journey in
+                    tech began in school, where I excelled academically, and it has evolved into a fervor for web
+                    development and full-stack learning. I'm currently enhancing my skills in Data Structures and
+                    Algorithms
+                    with C++. When I’m not coding, I enjoy exploring the latest trends in video editing and design. I'm
+                    always eager to learn and take on new challenges!
+
+                </p>
+            </div>
+
+
+
+        </section>
+        <hr>
+        
+
+
+
+
+        <!-- Load library from the CDN -->
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+        <!-- Setup and start animation! -->
+        <script>
+            var typed = new Typed('#element', {
+                strings: ['I am a Frontend web developer.', 'I am a Video Editor.'],
+                typeSpeed: 50,
+                backSpeed: 50,   // Speed at which it backspaces
+                loop: true       // Allows looping of the strings
+            });
+        </script>
+
+        <script src="app.js"></script>
+</body>
+
+<footer>
+
+    <div class="social-icons">
+        <a href="https://www.linkedin.com/in/dineshpatel24/" target="_blank">
+            <i class='bx bxl-linkedin'></i>
+        </a>
+        <a href="https://github.com/dineshpatel24" target="_blank">
+            <i class='bx bxl-github'></i>
+        </a>
+        <a href="https://x.com/Justt_dinu?t=ublG__nPqVz2DnBfqEuRNg&s=09" target="_blank">
+            <i class='bx bxl-twitter'></i>
+        </a>
+        <a href="https://www.instagram.com/justt.dinu/?__pwa=1" target="_blank">
+            <i class='bx bxl-instagram'></i>
+        </a>
+    </div>
+    <p>&copy; 2024 Dinesh. All Rights Reserved.</p>
+</footer>
+</html>

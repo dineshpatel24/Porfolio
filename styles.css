@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;300;400;500;700;800;900&family=Quicksand:wght@300..700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Quicksand;
+}
+
+body{
+    background-color: rgb(39, 39, 197);
+}
+
+.navbar {
+    height: 30px;
+    
+    background-color: rgb(58, 58, 206);
+    color: white;
+    display: flex;
+    justify-items: center;
+    justify-content: space-between;
+
+}
+
+.left{
+    padding-left: 5vmin;
+    font-weight: bold;
+}
+
+.right a {
+    
+    text-decoration: none;
+    color: white;
+    justify-content: space-between;
+    padding-right: 3vmin;
+    font-size: 0.7rem;
+    justify-items: center;
+}
+
+.right a:hover{
+    font-weight: 300;
+    font-size: 1rem;
+    transition: 1s;
+}
+
+/* main */
+.content{
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    margin-top: 12vmin;
+}
+
+.img{
+     width: 50%;
+     
+}
+
+.myname{
+    color: blueviolet;
+}
+
+.left-sec{
+    margin-top: 10vmin;
+    color: white;
+    margin-left: 15vmin;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+
+.right-sec{
+    margin: 15vmin;
+    margin-right: -10%;
+}
+
+#intro-text{
+    color: white;
+    margin-top: 15vmin;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.btn{
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #0073b1; /* LinkedIn Blue */
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #005582;
+}
+
+hr {
+    width: 100%;
+    border: 1px solid violet;
+    margin-top: 20px;
+}
+
+   /* Skills Section Styles */
+   #skills {
+    padding: 50px 20px;
+ 
+    margin-top: 5vmin;
+}
+
+#skills h2 {
+    text-align: center;
+}
+
+#skills ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+#skills li {
+    background-color: #0073b1;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 5vmin;
+}
+
+#skills li:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.box-sections{
+    margin: 3vmin 3vmin 3vmin 3vmin;
+    border: 0.1rem solid white;
+    border-radius: 2rem;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.edu-box{
+   
+    text-align: center;
+
+   display: flex; /* Use flexbox to arrange items side by side */
+   gap: 20px; /* Space between the two boxes */
+   justify-content: center; /* Center align the boxes */
+   flex-wrap: wrap; /* Ensure responsiveness */
+  
+}
+.edu-box h2{
+    margin-top: 4vmin;
+}
+
+#Education {
+    display: flex; /* Use flexbox to arrange items side by side */
+    gap: 20px; /* Space between the two boxes */
+    justify-content: center; /* Center align the boxes */
+    flex-wrap: wrap; /* Ensure responsiveness */
+    
+}
+@media (max-width: 768px) {
+    #Education {
+        flex-direction: column; /* Stack boxes vertically on small screens */
+    }
+}
+.school, .clg, .About {
+    /* margin: 3vmin;
+    width: 50%;
+    /* font-size: small; */
+    background-color: #f8f8f8; /* Light gray background */
+    padding: 15px;
+    margin: 0 3vmin 3vmin; /* Space between the boxes */
+    border-radius: 8px; /* Rounded corners */
+    border: 1px solid #ddd; /* Light border */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    transition: transform 0.3s, box-shadow 0.3s; 
+    
+    
+}
+
+.About p{
+    font-size: 0.5rem;
+}
+
+.about-box{
+    margin-top: 4vmin;
+    margin-bottom: 2vmin;
+}
+.about-box h2{
+    text-align: center;
+    margin-bottom: 2vmin;
+
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center; /* Center the icons */
+    margin-top: 20px;
+}
+
+.social-icons a {
+    margin: 0 10px; /* Space between icons */
+    font-size: 24px; /* Size of icons */
+    /* color: red; Icon color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s; /* Transition for hover effect */
+}
+
+
+.social-icons a:hover {
+    /* LinkedIn */
+    color: #0077B5; /* Default LinkedIn color */
+}
+
+.social-icons a:nth-child(1) {
+    color: #0077B5; /* LinkedIn */
+}
+.social-icons a:nth-child(2) {
+    color: #181717; /* GitHub */
+}
+.social-icons a:nth-child(3) {
+    color: #1DA1F2; /* Twitter */
+}
+.social-icons a:nth-child(4) {
+    color: #C13584; /* Instagram */
+}
+
+/* Darker color and increase size on hover */
+.social-icons a:hover {
+    transform: scale(1.1); /* Increase size by 10% */
+}
+
+.social-icons a:nth-child(1):hover {
+    color: #005582; /* Darker LinkedIn color */
+}
+.social-icons a:nth-child(2):hover {
+    color: #101010; /* Darker GitHub color */
+}
+.social-icons a:nth-child(3):hover {
+    color: #0E85D4; /* Darker Twitter color */
+}
+.social-icons a:nth-child(4):hover {
+    color: #A32867; /* Darker Instagram color */
+}
+
+
+
+/* footer  */
+footer {
+    margin-top: 5vmin;
+    text-align: center; /* Center the text */
+    padding: 20px; /* Add some padding */
+    background-color:  rgb(58, 58, 206);; /* Light background color */
+    color: #333; /* Text color */
+    position: relative; /* Positioning */
+    bottom: 0; /* Stick to the bottom */
+    width: 100%; /* Full width */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+    .content {
+        flex-direction: column; /* Stack on smaller screens */
+        align-items: center;
+    }
+
+    .left-sec, .right-sec {
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%; /* Full width for both sections */
+        text-align: center; /* Center text */
+    }
+
+    .img {
+        width: 100%; /* Full width for image */
+    }
+
+    #intro-text {
+        font-size: 1.5rem; /* Smaller font size */
+    }
+}
+
+@media (max-width: 768px) {
+    #skills ul {
+        flex-direction: column; /* Stack skills vertically */
+    }
+
+    .edu-box {
+        flex-direction: column; /* Stack education sections vertically */
+    }
+
+    .about-box p {
+        font-size: 0.8rem; /* Smaller font size for about section */
+    }
+}
+
+@media (max-width: 480px) {
+    .btn {
+        padding: 10px; /* Adjust button padding */
+        font-size: 0.9rem; /* Smaller button font size */
+    }
+
+    footer {
+        padding: 15px; /* Adjust footer padding */
+    }
+}
+
